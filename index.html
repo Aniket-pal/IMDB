@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imdb mini</title>
+    
+    <!-- Fontawesome link -->
+    <script src="https://kit.fontawesome.com/6766d78bed.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar starts -->
+    <nav>
+        <a id="logo" href="#">
+            <img src="logo.png" alt="logo" style="height: 80px; width:130px; margin-right: 10px;">
+            
+        </a>
+        <a id="favourites" href="favourites.html"><i style="color: crimson;" class="fa-solid fa-heart"></i> Favourites</a>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Search section starts -->
+    <div id="search-container">
+        <input id="search-box" class="searchBox" type="text" placeholder="Search your movie here..." onkeyup="findMovies()"
+            onclick="findMovies()">
+        <!-- Search list starts -->
+        <div id="search-list">
+            <!-- <div class="search-list-item">
+                    <div class="thumbnail">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+                            alt="movie poster">
+                    </div>
+                    <div class="search-item-info">
+                        <h3>Avatar</h3>
+                        <p>2009</p>
+                    </div>
+                </div> -->
+        </div>
+        <!-- Search list ends -->
+    </div>
+    <!-- Search section ends -->
+
+    <!-- Result container starts -->
+    <div id="result-container">
+        <div id="result">
+            <!-- Movie Information -->
+
+            <div class="poster">
+                <img class="movie-poster" src="./assets/gadar-2-poster.jpg"
+                    alt="movie poster">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Gadar 2</h3>
+                <ul class="movie-misc-info">
+                    <li class="year"><b>Year:</b> 2023</li>
+                    <li class="rating"><b>Rating: PG-13</b></li>
+                    <li class="released"><b>Released:</b> 11 Aug 2023</li>
+                </ul>
+                <p class="genre"><b>Genre:</b> Action, Adventure, Fantasy, Patriot</p>
+                <p class="director"><b>Director:</b> Anil Sharma</p>
+                <p class="actors"><b>Actors:</b> Sunny Deol,Ameesha Patel,Charanjeet Singh,Simrat Kaur.</p>
+                <p class="plot"><b>Plot:</b> During the Indo-Pakistani War of 1971, 
+                    Tara Singh returns to Pakistan to bring his son, Charanjeet, back home.</p>
+                <p class="language"><b>Language:</b> English, Hindi,</p>
+                <p class="awards"><b><i style="color: gold;" class="fas fa-award"></i></b> Won everyone's heart
+                    <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <button id="add-to-fav"><i class="fa-solid fa-heart"></i> Add to Favourites</button>
+    </div>
+
+    <!-- Result container ends -->
+
+    <!-- Javascript  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
